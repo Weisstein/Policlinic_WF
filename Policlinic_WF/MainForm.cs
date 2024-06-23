@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Policlinic_WF.Forms.Division_forms;
+using Policlinic_WF.Forms.DoctorsForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +35,14 @@ namespace Policlinic_WF
             childForm.Show();
         }
 
+        private void btnDivision_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Divisions());
+        }
 
+        private void btbDoctors_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Doctors());
+        }
     }
 }

@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Division forms\DivisionModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Division forms\DivisionModule.Designer.cs">
+      <DependentUpon>DivisionModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Division forms\Divisions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Division forms\Divisions.Designer.cs">
+      <DependentUpon>Divisions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\DoctorsModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\DoctorsModule.Designer.cs">
+      <DependentUpon>DoctorsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\ScheduleModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DoctorsForms\ScheduleModule.Designer.cs">
+      <DependentUpon>ScheduleModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +85,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Division forms\DivisionModule.resx">
+      <DependentUpon>DivisionModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Division forms\Divisions.resx">
+      <DependentUpon>Divisions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DoctorsForms\Doctors.resx">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DoctorsForms\DoctorsModule.resx">
+      <DependentUpon>DoctorsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DoctorsForms\ScheduleModule.resx">
+      <DependentUpon>ScheduleModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,8 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
