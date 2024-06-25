@@ -221,6 +221,7 @@
             this.btnSave.TabIndex = 19;
             this.btnSave.Text = "Сохранить";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // DoctorsModule
             // 

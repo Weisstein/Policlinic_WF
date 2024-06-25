@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDivision = new System.Windows.Forms.Button();
-            this.btbDoctors = new System.Windows.Forms.Button();
-            this.btnPacient = new System.Windows.Forms.Button();
-            this.btnVisits = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.btnVisits = new System.Windows.Forms.Button();
+            this.btnPacient = new System.Windows.Forms.Button();
+            this.btbDoctors = new System.Windows.Forms.Button();
+            this.btnDivision = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,19 +74,45 @@
             this.panel2.Size = new System.Drawing.Size(153, 453);
             this.panel2.TabIndex = 1;
             // 
-            // btnDivision
+            // button5
             // 
-            this.btnDivision.BackColor = System.Drawing.Color.Transparent;
-            this.btnDivision.FlatAppearance.BorderSize = 0;
-            this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDivision.Location = new System.Drawing.Point(0, 3);
-            this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(150, 44);
-            this.btnDivision.TabIndex = 2;
-            this.btnDivision.Text = "Подразделения";
-            this.btnDivision.UseVisualStyleBackColor = false;
-            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(0, 398);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(151, 44);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Отчеты";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // btnVisits
+            // 
+            this.btnVisits.BackColor = System.Drawing.Color.Transparent;
+            this.btnVisits.FlatAppearance.BorderSize = 0;
+            this.btnVisits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnVisits.Location = new System.Drawing.Point(-1, 151);
+            this.btnVisits.Name = "btnVisits";
+            this.btnVisits.Size = new System.Drawing.Size(153, 44);
+            this.btnVisits.TabIndex = 5;
+            this.btnVisits.Text = "Посещения";
+            this.btnVisits.UseVisualStyleBackColor = false;
+            // 
+            // btnPacient
+            // 
+            this.btnPacient.BackColor = System.Drawing.Color.Transparent;
+            this.btnPacient.FlatAppearance.BorderSize = 0;
+            this.btnPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPacient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPacient.Location = new System.Drawing.Point(-1, 101);
+            this.btnPacient.Name = "btnPacient";
+            this.btnPacient.Size = new System.Drawing.Size(151, 44);
+            this.btnPacient.TabIndex = 4;
+            this.btnPacient.Text = "Пациенты";
+            this.btnPacient.UseVisualStyleBackColor = false;
+            this.btnPacient.Click += new System.EventHandler(this.btnPacient_Click);
             // 
             // btbDoctors
             // 
@@ -102,44 +128,19 @@
             this.btbDoctors.UseVisualStyleBackColor = false;
             this.btbDoctors.Click += new System.EventHandler(this.btbDoctors_Click);
             // 
-            // btnPacient
+            // btnDivision
             // 
-            this.btnPacient.BackColor = System.Drawing.Color.Transparent;
-            this.btnPacient.FlatAppearance.BorderSize = 0;
-            this.btnPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPacient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnPacient.Location = new System.Drawing.Point(-1, 101);
-            this.btnPacient.Name = "btnPacient";
-            this.btnPacient.Size = new System.Drawing.Size(151, 44);
-            this.btnPacient.TabIndex = 4;
-            this.btnPacient.Text = "Пациенты";
-            this.btnPacient.UseVisualStyleBackColor = false;
-            // 
-            // btnVisits
-            // 
-            this.btnVisits.BackColor = System.Drawing.Color.Transparent;
-            this.btnVisits.FlatAppearance.BorderSize = 0;
-            this.btnVisits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnVisits.Location = new System.Drawing.Point(-1, 151);
-            this.btnVisits.Name = "btnVisits";
-            this.btnVisits.Size = new System.Drawing.Size(153, 44);
-            this.btnVisits.TabIndex = 5;
-            this.btnVisits.Text = "Посещения";
-            this.btnVisits.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(0, 398);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(151, 44);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Отчеты";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDivision.BackColor = System.Drawing.Color.Transparent;
+            this.btnDivision.FlatAppearance.BorderSize = 0;
+            this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDivision.Location = new System.Drawing.Point(0, 3);
+            this.btnDivision.Name = "btnDivision";
+            this.btnDivision.Size = new System.Drawing.Size(150, 44);
+            this.btnDivision.TabIndex = 2;
+            this.btnDivision.Text = "Подразделения";
+            this.btnDivision.UseVisualStyleBackColor = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // panelMain
             // 

@@ -77,6 +77,18 @@
     <Compile Include="Forms\DoctorsForms\ScheduleModule.Designer.cs">
       <DependentUpon>ScheduleModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PacientForms\Pacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PacientForms\Pacient.Designer.cs">
+      <DependentUpon>Pacient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PacientForms\PacientModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PacientForms\PacientModule.Designer.cs">
+      <DependentUpon>PacientModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DoctorsForms\ScheduleModule.resx">
       <DependentUpon>ScheduleModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PacientForms\Pacient.resx">
+      <DependentUpon>Pacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PacientForms\PacientModule.resx">
+      <DependentUpon>PacientModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

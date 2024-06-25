@@ -76,11 +76,13 @@ namespace Policlinic_WF.Forms.DoctorsForms
         private void LoadDivisions()
         {
             cbSearch.Items.Clear();
-            cbSearch.DataSource = getTable("SELECT Код_подразделения,Наимен_подразделения FROM Подразделение");
+            DataTable table = new DataTable();            
+            table = getTable("SELECT Код_подразделения,Наимен_подразделения FROM Подразделение");
+            table.Rows.Add("0", "Выбор подразделения");
+            cbSearch.DataSource = table;
             cbSearch.DisplayMember = "Наимен_подразделения";
             cbSearch.ValueMember = "Код_подразделения";
             cbSearch.SelectedValue = 0;
-            cbSearch.Text = "Выбор подразделения";
         }
 
         private void cbSearch_SelectedIndexChanged(object sender, EventArgs e)

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Policlinic_WF.Forms.DoctorsForms
 {
@@ -53,7 +54,26 @@ namespace Policlinic_WF.Forms.DoctorsForms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    cmd = new SqlCommand("update Расписание set Пн=@Pn,Вт=@Vt,Ср=@Sr,Чт=@Ht,Пт=@Pt,Сб=@Sb,Вс=@Vs where Таб_номер=" + Code, connection);
+                    cmd.Parameters.AddWithValue("@Pn", dtp0.Text + "-" + dtp1.Text);
+                    cmd.Parameters.AddWithValue("@Vt", dtp2.Text + "-" + dtp3.Text);
+                    cmd.Parameters.AddWithValue("@Sr", dtp4.Text + "-" + dtp5.Text);
+                    cmd.Parameters.AddWithValue("@Ht", dtp6.Text + "-" + dtp7.Text);
+                    cmd.Parameters.AddWithValue("@Pt", dtp8.Text + "-" + dtp9.Text);
+                    cmd.Parameters.AddWithValue("@Sb", dtp10.Text + "-" + dtp11.Text);
+                    cmd.Parameters.AddWithValue("@Vs", dtp12.Text + "-" + dtp13.Text);
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Policlinic_WF.Forms.Division_forms;
 using Policlinic_WF.Forms.DoctorsForms;
+using Policlinic_WF.Forms.PacientForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +44,11 @@ namespace Policlinic_WF
         private void btbDoctors_Click(object sender, EventArgs e)
         {
             openChildForm(new Doctors());
+        }
+
+        private void btnPacient_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Pacient());
         }
     }
 }

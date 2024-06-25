@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Policlinic_WF.Forms.Division_forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -51,6 +52,30 @@ namespace Policlinic_WF.Forms.DoctorsForms
         {
             ScheduleModule scheduleModule = new ScheduleModule(lblCode.Text);
             scheduleModule.Show();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    cmd = new SqlCommand("update Врач set Фамилия=@foreName,Имя=@name,Отчество=@patronymic,Кабинет=@cab,Квалификация=@kval,Код_подразделения=@divCode where Таб_номер=" + lblCode.Text, connection);
+                    cmd.Parameters.AddWithValue("@foreName", txtForename.Text);
+                    cmd.Parameters.AddWithValue("@name", txtName.Text);
+                    cmd.Parameters.AddWithValue("@patronymic", txtPatronymic.Text);
+                    cmd.Parameters.AddWithValue("@cab", mtxtNum.Text);
+                    cmd.Parameters.AddWithValue("@kval", cbKval.SelectedItem);
+                    cmd.Parameters.AddWithValue("@divCode", cbDiv.SelectedValue);
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                doctors.LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
